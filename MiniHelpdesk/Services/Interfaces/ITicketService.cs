@@ -7,4 +7,5 @@ public interface ITicketService
     Task<List<Ticket>> GetAllAsync();
     Task<Ticket?> GetByIdAsync(int id);
     Task CloseAsync(int id);
+    Task CreateAsync(CreateTicketViewModel model);
 }

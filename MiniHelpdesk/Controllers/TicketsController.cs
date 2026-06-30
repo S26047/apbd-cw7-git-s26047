@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MiniHelpdesk.Models;
 using MiniHelpdesk.Services.Interfaces;
 
 namespace MiniHelpdesk.Controllers;
@@ -16,5 +17,41 @@ public class TicketsController : Controller
     {
         var tickets = await _ticketService.GetAllAsync();
         return View(tickets);
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateTicketViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        await _ticketService.CreateAsync(model);
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Details(int id)
+    {
+        var ticket = await _ticketService.GetByIdAsync(id);
+
+        if (ticket == null)
+            return NotFound();
+
+        return View(ticket);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Close(int id)
+    {
+        await _ticketService.CloseAsync(id);
+
+        return RedirectToAction(nameof(Details), new { id });
     }
 }
