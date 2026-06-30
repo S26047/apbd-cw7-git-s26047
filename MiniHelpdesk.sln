@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHelpdesk", "MiniHelpdesk\MiniHelpdesk.csproj", "{303E681C-CFC9-4B11-B22E-F687000E2052}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303E681C-CFC9-4B11-B22E-F687000E2052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303E681C-CFC9-4B11-B22E-F687000E2052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303E681C-CFC9-4B11-B22E-F687000E2052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303E681C-CFC9-4B11-B22E-F687000E2052}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
