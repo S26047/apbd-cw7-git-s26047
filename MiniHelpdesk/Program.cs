@@ -1,10 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using MiniHelpdesk.Data;
+using MiniHelpdesk.Repositories;
+using MiniHelpdesk.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<HelpdeskContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+builder.Services.AddScoped<ITicketCommentRepository, TicketCommentRepository>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
