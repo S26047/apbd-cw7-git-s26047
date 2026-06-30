@@ -1,0 +1,41 @@
+[33mcommit 0f64ac452bed33c9ec11b96687167b01cca02171[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:23:39 2026 +0200
+
+    Add tickets listing page
+
+[33mcommit 1bd70b97355e6517c568d22a43dec88e68efecc0[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:22:01 2026 +0200
+
+    Implement repository layer
+
+[33mcommit 4a79e6957272663f1684f26300b54cc185cb9396[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:19:24 2026 +0200
+
+    Add Ticket and TicketComment models
+
+[33mcommit 969f113cb02437512ca376fa8389d1626d53e5df[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:14:56 2026 +0200
+
+    Add Ticket and TicketComment models
+
+[33mcommit 7f59de42dae2f78bccaacc1762ed73e43bbc8b4d[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:07:04 2026 +0200
+
+    Remove IDE files from repository
+
+[33mcommit 93e17d828cba0cf7a6504330f3f5129d9432b99a[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:03:52 2026 +0200
+
+    Initial ASP.NET Core MVC project
+
+[33mcommit 6e8996ea1c14b822aa22c0333fcfaec68005b564[m
+Author: Filip Flejsierowicz <s26047@pjwstk.edu.pl>
+Date:   Tue Jun 30 21:00:34 2026 +0200
+
+    Initial ASP.NET Core MVC project
