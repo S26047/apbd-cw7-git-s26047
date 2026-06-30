@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MiniHelpdesk.Models.Ticket>
+
+<h2>Tickets</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nowe zgłoszenie</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Tytuł</th>
+        <th>Status</th>
+        <th>Data utworzenia</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var ticket in Model)
+    {
+        <tr>
+            <td>@ticket.Title</td>
+            <td>@ticket.Status</td>
+            <td>@ticket.CreatedAt</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@ticket.Id">Szczegóły</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
